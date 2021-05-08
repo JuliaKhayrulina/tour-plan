@@ -19,11 +19,28 @@
       align-items: center
       justify-content: space-between 
     &__link
+      position: relative
       text-transform: uppercase
       font-size: 14px
       line-height: 18px
       color: $light
       text-decoration: none
+      &::after
+        content: ''
+        position: absolute
+        top: 100%
+        left: 0
+        width: 100%
+        height: 1px
+        background: $primary
+        opacity: 0
+        transition: height 0.4s, opacity 0.3s, transform 0.2s
+        transform: translateY(-10px)
+      &:hover
+        &::after
+          height: 3px
+          opacity: 1
+          transform: translateY(5px)
 .logo
   width: 177px
 .search
@@ -37,7 +54,7 @@
     height: 100%
     padding-left: 23px
     padding-right: 75px
-    background-color: #F5FAFE
+    background-color: $secondary
     border: none
     font-size: 12px
     line-height: 15px
@@ -49,6 +66,12 @@
     top: 0
     border: none
     background-color: $primary
+    &:hover
+      background-color: #f70743
+    &:active
+      background-color: #e4063e
+      
+      
 .user
   display: flex
   align-items: center

@@ -9,7 +9,9 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
     <title>Best Tour Plan - Hotel Booking</title>
   </head>
   <body>
@@ -107,7 +109,40 @@
             <span class="rating__counter">4.5/<span class="rating__counter-sm">5</span></span>
           </div>
         </div>
+        <div class="hotel-grid">
+          <div class="hotel__slider">
+            <!-- Slider main container -->
+            <div class="hotel__swiper-container swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="hotel__swiper-wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img class="hotel__swiper-img" src="./img/slide1.jpg" alt="slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="hotel__swiper-img" src="./img/slide2.jpg" alt="slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="hotel__swiper-img" src="./img/slide3.jpg" alt="slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="hotel__swiper-img" src="./img/slide4.jpg" alt="slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="hotel__swiper-img" src="./img/slide5.jpg" alt="slide" />
+                </div>
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <button class="hotel__slider-button hotel__slider-button--prev"></button>
+              <button class="hotel__slider-button hotel__slider-button--next"></button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

@@ -12,10 +12,7 @@ const swiper = new Swiper('.swiper-container', {
     enabled: true,
     onlyInViewport: false,
   },
-  autoplay: {
-    delay: 1500,
-    disableOnInteraction: false,
-  },
+
   speed: 1000,
 
   effect: 'fade',

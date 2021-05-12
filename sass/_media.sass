@@ -56,11 +56,13 @@
           margin-bottom: 10px
       &__username
         margin-bottom: 11px
+      &__date
+        line-height: 8px
     &__slider
       &-button
-        top: 44%
+        top: 43%
         &--next
-          right: 3px
+          right: 0px
         &--prev
           left: 0px
     &__title
@@ -125,15 +127,11 @@
   .reviews
     &__slider
       &-button
-        top: 8%
+        top: 11%
         &--next
-          right: 45%
-          margin-right: -65px
-          transform: translate(50%, 0)
+          right: 14%
         &--prev
-          left: 45%
-          margin-left: -58px
-          transform: translate(-50%, 0)
+          left: 11%
              
 //==============================================//
 @media (max-width: 620px)
@@ -145,11 +143,20 @@
         width: 95%  
     &__slider
       &-button
-        top: 6%
+        top: 11%
         &--next
-          right: 45%
+          right: 14%
         &--prev
-          left: 45%
+          left: 11%
+@media (max-width: 560px)
+   .reviews 
+    &__slider
+      &-button
+        top: 9%
+        &--next
+          right: 14%
+        &--prev
+          left: 11%
   
 @media (min-width: 319px) and (max-width: 420px) 
   .container
@@ -183,6 +190,9 @@
     height: 173px
   .newsletter
     background-position: bottom 51% right 50%
+    &-wrapper
+      min-width: 280px
+      margin: 0
     &-title
       font-size: 20px
       line-height: 25px
@@ -205,3 +215,11 @@
         padding: 0 29px 36px 33px
       &__text
         text-align: left
+        line-height: 19px
+    &__slider
+      &-button
+        top: 8%
+        &--next
+          right: 14%
+        &--prev
+          left: 11%

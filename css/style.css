@@ -978,6 +978,10 @@ template {
   background-color: #e4063e;
 }
 
+.parallax-window {
+  background: transparent;
+}
+
 .reviews {
   padding: 40px 0 70px 0;
 }
@@ -1189,11 +1193,14 @@ template {
   .reviews-slider__username {
     margin-bottom: 11px;
   }
+  .reviews-slider__date {
+    line-height: 8px;
+  }
   .reviews__slider-button {
-    top: 44%;
+    top: 43%;
   }
   .reviews__slider-button--next {
-    right: 3px;
+    right: 0px;
   }
   .reviews__slider-button--prev {
     left: 0px;
@@ -1296,21 +1303,13 @@ template {
     max-width: 531px;
   }
   .reviews__slider-button {
-    top: 8%;
+    top: 11%;
   }
   .reviews__slider-button--next {
-    right: 45%;
-    margin-right: -65px;
-    -webkit-transform: translate(50%, 0);
-        -ms-transform: translate(50%, 0);
-            transform: translate(50%, 0);
+    right: 14%;
   }
   .reviews__slider-button--prev {
-    left: 45%;
-    margin-left: -58px;
-    -webkit-transform: translate(-50%, 0);
-        -ms-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
+    left: 11%;
   }
 }
 
@@ -1322,13 +1321,25 @@ template {
     width: 95%;
   }
   .reviews__slider-button {
-    top: 6%;
+    top: 11%;
   }
   .reviews__slider-button--next {
-    right: 45%;
+    right: 14%;
   }
   .reviews__slider-button--prev {
-    left: 45%;
+    left: 11%;
+  }
+}
+
+@media (max-width: 560px) {
+  .reviews__slider-button {
+    top: 9%;
+  }
+  .reviews__slider-button--next {
+    right: 14%;
+  }
+  .reviews__slider-button--prev {
+    left: 11%;
   }
 }
 
@@ -1376,6 +1387,10 @@ template {
   .newsletter {
     background-position: bottom 51% right 50%;
   }
+  .newsletter-wrapper {
+    min-width: 280px;
+    margin: 0;
+  }
   .newsletter-title {
     font-size: 20px;
     line-height: 25px;
@@ -1401,6 +1416,16 @@ template {
   }
   .reviews-slider__text {
     text-align: left;
+    line-height: 19px;
+  }
+  .reviews__slider-button {
+    top: 8%;
+  }
+  .reviews__slider-button--next {
+    right: 14%;
+  }
+  .reviews__slider-button--prev {
+    left: 11%;
   }
 }
 /*# sourceMappingURL=style.css.map */

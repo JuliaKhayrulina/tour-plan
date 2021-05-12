@@ -38,3 +38,5 @@ const rewiewsSwiper = new Swiper('.reviews__swiper-container', {
 
   speed: 1000,
 });
+
+$('.parallax-window').parallax({ imageSrc: 'img/bg-newsletter.jpg' });

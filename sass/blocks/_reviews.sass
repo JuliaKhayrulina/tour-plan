@@ -1,0 +1,85 @@
+.reviews
+  padding: 40px 0 70px 0
+  &__title
+    margin-bottom: 70px
+    font-weight: 700
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+  &-slider
+    &__item
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin: auto
+      margin-top: 45px
+      padding: 0 60px 30px 64px
+      width: 730px
+      min-height: 280px
+      background-color: #fff
+      border-radius: 8px
+      &::before
+        content: ''
+        position: absolute
+        width: 70px
+        height: 47px
+        top: 13px
+        left: 62px
+        background: url(../img/quote-left.svg) no-repeat
+      &::after
+        content: ''
+        position: absolute
+        width: 70px
+        height: 47px
+        bottom: 113px
+        right: 60px
+        background: url(../img/quote-right.svg) no-repeat
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: -45px
+    &__avatar
+      margin-bottom: 9px
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      object-fit: cover
+    &__username
+      margin-bottom: 10px
+      font-weight: 700
+      font-size: 12px
+      line-height: 15px
+      color: $primary
+    &__date
+      font-size: 10px
+      line-height: 11px
+    &__text
+      padding: 32px 35px 0 35px
+      font-size: 12px
+      line-height: 18px
+      text-align: justify
+  &__slider
+    max-width: 731px
+    &-button
+      position: absolute
+      top: 41%
+      transform: translateY(-50%)
+      z-index: 99
+      width: 30px
+      height: 30px
+      border: none
+      cursor: pointer
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 10px
+      background-color: transparent
+      outline: none
+      &--next
+        right: 18px
+        background-image: url('../img/arrow-right.svg') 
+      &--prev
+        left: 18px
+        background-image: url('../img/arrow-left.svg') 

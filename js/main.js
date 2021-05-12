@@ -35,8 +35,6 @@ const rewiewsSwiper = new Swiper('.reviews__swiper-container', {
     enabled: true,
     onlyInViewport: false,
   },
-
-  speed: 1000,
 });
 
 $('.parallax-window').parallax({ imageSrc: 'img/bg-newsletter.jpg' });

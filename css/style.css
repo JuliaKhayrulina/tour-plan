@@ -644,7 +644,6 @@ template {
 
 .hotel__slider-button {
   position: absolute;
-  top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -658,6 +657,7 @@ template {
   background-size: 10px;
   background-color: transparent;
   outline: none;
+  top: 50%;
 }
 
 .hotel__slider-button--next {
@@ -1085,7 +1085,6 @@ template {
 
 .reviews__slider-button {
   position: absolute;
-  top: 41%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1099,6 +1098,7 @@ template {
   background-size: 10px;
   background-color: transparent;
   outline: none;
+  top: 41%;
 }
 
 .reviews__slider-button--next {

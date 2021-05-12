@@ -1,31 +1,30 @@
 .hotel
-  padding: 23px 0 70px
+  padding: 17px 0 70px
   &-info
     display: flex
     align-items: center
     justify-content: space-between
-    padding-bottom: 20px
+    padding-bottom: 19px
     &__text
       width: 80%
     &__offer
       max-width: 70px
-      margin-top: 4px
+      margin-top: 2px
     &__name
-      margin: 4px 14px 0 0
+      margin: 2px 15px 0 0
       max-width: 100% 
     &__description
-      max-width: 100%
-      margin-top: 5px 
+      max-width: 100% 
+      font-size: 12px
+      line-height: 15px
   &-name
     font-size: 24px
-    line-height: 30px
+    line-height: 29px
+    text-transform: uppercase
   &-wrapper
     display: flex
     flex-wrap: wrap
     align-items: center
-  &-description
-    font-size: 12px
-    line-height: 15px
 
   &__swiper-container 
     position: relative
@@ -70,6 +69,7 @@
 
 .stars
   flex-basis: 100%
+  letter-spacing: -2px
 .offer
   padding: 3px 9px
   font-size: 10px
@@ -80,6 +80,7 @@
 .rating
   max-width: 65px
   min-height: 45px
+  padding-top: 3px
   border-radius: 4px
   text-align: center
   color: $light
@@ -103,7 +104,7 @@
 .booking
   width: 350px
   min-height: 210px
-  padding: 27px
+  padding: 29px 29px 26px 26px
   font-family: Nunito
   color: $light
   background-color: $dark
@@ -124,7 +125,7 @@
     width: 100%
     font-weight: 800
     font-size: 24px
-    line-height: 33px
+    line-height: 30px
   &__per-room
     width: 100%
     font-size: 12px
@@ -138,13 +139,14 @@
     display: flex
     justify-content: space-between
     margin-bottom: 8px
+    text-align: right
   &__descr
     width: 72%
   &__call-center
     display: flex
     flex-flow: row wrap
     justify-content: space-between
-    margin-bottom: 17px
+    margin-bottom: 16px
     font-weight: 600
     font-size: 18px
     line-height: 25px

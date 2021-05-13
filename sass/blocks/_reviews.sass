@@ -17,7 +17,6 @@
       margin-top: 45px
       padding: 0 60px 30px 64px
       width: 730px
-      min-height: 280px
       background-color: #fff
       border-radius: 8px
       &::before
@@ -58,17 +57,20 @@
       line-height: 11px
     &__text
       padding: 32px 35px 0 35px
+      max-height: 55%
       font-size: 12px
       line-height: 18px
       text-align: justify
+      overflow: hidden
   &__slider
     max-width: 731px
     &-button
       @include slider_btn
-      top: 41%
+      top: 46%
       &--next
         right: 18px
         background-image: url('../img/arrow-right.svg') 
       &--prev
         left: 18px
         background-image: url('../img/arrow-left.svg') 
+ 

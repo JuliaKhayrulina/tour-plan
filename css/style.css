@@ -23,6 +23,7 @@ p, h1, h2, h3, h4, h5, h6 {
 button {
   padding: 0;
   border: none;
+  cursor: pointer;
 }
 
 body {
@@ -858,7 +859,6 @@ template {
   color: #fff;
   border-radius: 4px;
   background-color: #EC1F46;
-  cursor: pointer;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
@@ -1011,7 +1011,6 @@ template {
   margin-top: 45px;
   padding: 0 60px 30px 64px;
   width: 730px;
-  min-height: 280px;
   background-color: #fff;
   border-radius: 8px;
 }
@@ -1074,9 +1073,11 @@ template {
 
 .reviews-slider__text {
   padding: 32px 35px 0 35px;
+  max-height: 55%;
   font-size: 12px;
   line-height: 18px;
   text-align: justify;
+  overflow: hidden;
 }
 
 .reviews__slider {
@@ -1098,7 +1099,7 @@ template {
   background-size: 10px;
   background-color: transparent;
   outline: none;
-  top: 41%;
+  top: 46%;
 }
 
 .reviews__slider-button--next {
@@ -1111,12 +1112,117 @@ template {
   background-image: url("../img/arrow-left.svg");
 }
 
+.activities {
+  padding: 63px 0 98px 0;
+}
+
+.activities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.activities__title {
+  margin-bottom: 57px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.card {
+  position: relative;
+  width: 255px;
+  height: 255px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 29px 24px 26px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(270.17deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  background: -o-linear-gradient(270.17deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: -1;
+}
+
+.card__title {
+  max-width: 100%;
+  margin-top: auto;
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.card__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+
+.card__btn {
+  min-width: 100px;
+  max-width: 100%;
+  padding: 7px 10px 7px 10px;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  font-family: Nunito;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.card__btn:hover {
+  background-color: #f70743;
+}
+
+.card__btn:active {
+  background-color: #e4063e;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
   .hotel__slider {
     width: 590px;
+  }
+  .card {
+    width: 230px;
   }
 }
 
@@ -1197,7 +1303,7 @@ template {
     line-height: 8px;
   }
   .reviews__slider-button {
-    top: 43%;
+    top: 50%;
   }
   .reviews__slider-button--next {
     right: 0px;
@@ -1209,6 +1315,17 @@ template {
     margin-bottom: 50px;
     font-size: 30px;
     line-height: 38px;
+  }
+  .activities {
+    padding-top: 55px;
+    padding-bottom: 50px;
+  }
+  .card {
+    width: 339px;
+    margin-bottom: 20px;
+  }
+  .card__title {
+    max-width: 71%;
   }
 }
 
@@ -1303,13 +1420,16 @@ template {
     max-width: 531px;
   }
   .reviews__slider-button {
-    top: 11%;
+    top: 14%;
   }
   .reviews__slider-button--next {
     right: 14%;
   }
   .reviews__slider-button--prev {
     left: 11%;
+  }
+  .card {
+    width: 49%;
   }
 }
 
@@ -1321,25 +1441,25 @@ template {
     width: 95%;
   }
   .reviews__slider-button {
-    top: 11%;
+    top: 14%;
   }
-  .reviews__slider-button--next {
-    right: 14%;
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
-  .reviews__slider-button--prev {
-    left: 11%;
+  .activities__title {
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .card {
+    height: 200px;
   }
 }
 
 @media (max-width: 560px) {
   .reviews__slider-button {
-    top: 9%;
-  }
-  .reviews__slider-button--next {
-    right: 14%;
-  }
-  .reviews__slider-button--prev {
-    left: 11%;
+    top: 11%;
   }
 }
 
@@ -1419,13 +1539,17 @@ template {
     line-height: 19px;
   }
   .reviews__slider-button {
-    top: 8%;
+    top: 9%;
   }
   .reviews__slider-button--next {
-    right: 14%;
+    right: 12%;
   }
   .reviews__slider-button--prev {
-    left: 11%;
+    left: 13%;
+  }
+  .card {
+    width: 100%;
+    height: 255px;
   }
 }
 /*# sourceMappingURL=style.css.map */

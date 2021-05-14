@@ -61,11 +61,12 @@
         line-height: 8px
     &__slider
       &-button
-        top: 50%
-        &--next
-          right: 0px
         &--prev
-          left: 0px
+          top: 155px
+          left: 0
+        &--next
+          top: 155px
+          right: 0
     &__title
       margin-bottom: 50px
       font-size: 30px
@@ -133,14 +134,17 @@
   .subscribe
     width: 100%
     max-width: 531px
+    &__input
+      padding-left: 20px
   .reviews
     &__slider
       &-button
-        top: 14%
-        &--next
-          right: 14%
         &--prev
-          left: 11%
+          top: 30px
+          left: 20%
+        &--next
+          top: 30px
+          right: 20%
   .card
     width: 49% 
              
@@ -152,9 +156,7 @@
     &-slider
       &__item
         width: 95% 
-    &__slider
-      &-button
-        top: 14% 
+    
   .activities
     padding-top: 40px
     padding-bottom: 40px
@@ -164,12 +166,6 @@
       line-height: 23px
   .card
     height: 200px 
-//================================================//
-@media (max-width: 560px)
- .reviews
-    &__slider
-      &-button
-        top: 11%
 //================================================//
  
 @media (min-width: 319px) and (max-width: 420px) 
@@ -192,8 +188,6 @@
      min-height: 403px
     &-grid
       margin-top: 18px
-  .stars
-    margin-right: 13px
   .booking
     padding: 29px 21px 26px 22px
     &__start
@@ -227,16 +221,19 @@
         width: 100%
         min-width: 281px
         padding: 0 29px 36px 33px
+      &__avatar
+        margin-bottom: 8px
       &__text
+        padding-top: 30px
         text-align: left
         line-height: 19px
     &__slider
       &-button
-        top: 9%
-        &--next
-          right: 12%
         &--prev
-          left: 13%
+          left: 12%
+        &--next
+          right: 13%
   .card
-    width: 100%
+    width: 83%
+    min-width: 280px
     height: 255px

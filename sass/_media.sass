@@ -11,16 +11,11 @@
       row-gap: 15px
     &-item
       &:first-child
-        grid-template-rows: minmax(400px, 472px)
+        grid-template-rows: minmax(400px, 1fr)
       &__descr
         &--big
           padding: 20px 21px 25px 32px
-      &__subtitle
-        &--big
-          margin-bottom: 23px
-      &__info
-        margin-bottom: 23px
-            
+                 
 //==============================================//
 @media ( max-width: 992px )
   .container, .newsletter-wrapper
@@ -203,8 +198,9 @@
           margin-bottom: 24px
       &__info, &__stars
         display: none
-      
-             
+      &__offer
+        &--big
+          @include offer-small  
 //==============================================//
 @media (max-width: 620px)
   .logo
@@ -251,6 +247,10 @@
       grid-template-rows: repeat(auto-fit, minmax(200px, 321px))
       &:first-child
         grid-template-rows: repeat(auto-fit, minmax(200px, 321px))
+      &__offer
+        @include offer-big 
+        &--big
+          @include offer-big  
 
 //================================================//
  
@@ -324,6 +324,9 @@
     min-width: 280px
     height: 255px
   .packages
+    &__title
+        font-size: 18px
+        line-height: 23px
     &-item
       grid-template-rows: repeat(auto-fit, minmax(200px, 250px))
       &:first-child

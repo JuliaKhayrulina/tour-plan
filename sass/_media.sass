@@ -5,6 +5,22 @@
     width: 590px
   .card
     width: 230px
+  .packages
+    &-grid
+      column-gap: 15px
+      row-gap: 15px
+    &-item
+      &:first-child
+        grid-template-rows: minmax(400px, 472px)
+      &__descr
+        &--big
+          padding: 20px 21px 25px 32px
+      &__subtitle
+        &--big
+          margin-bottom: 23px
+      &__info
+        margin-bottom: 23px
+            
 //==============================================//
 @media ( max-width: 992px )
   .container, .newsletter-wrapper
@@ -79,6 +95,18 @@
     margin-bottom: 20px
     &__title
       max-width: 71%
+  .packages
+    &-grid
+      column-gap: 30px
+      row-gap: 30px
+    &-item
+      &:first-child
+        grid-template-rows: minmax(400px, 495px)
+      &__subtitle
+        &--big
+          margin-bottom: 27px
+      &__info
+        margin-bottom: 47px 
 
 //==============================================//      
 @media (max-width: 767px)
@@ -147,6 +175,35 @@
           right: 20%
   .card
     width: 49% 
+  .packages
+    &-container
+      width: 95%
+    &__title
+      font-size: 30px
+      line-height: 38px
+    &-grid
+      grid-template-columns: 1fr
+      column-gap: 15px
+      row-gap: 15px
+    &-item
+      display: grid
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+      &:first-child
+        grid-column: 1 / 1
+        grid-template-columns: repeat(auto-fit, minmax(200px, 288px))
+        grid-template-rows: minmax(200px, 250px)
+      &__descr
+        &--big
+          padding: 30px 21px 25px 32px  
+      &__subtitle
+        &--big
+          margin-bottom: 23px
+      &__room
+        &--big
+          margin-bottom: 24px
+      &__info, &__stars
+        display: none
+      
              
 //==============================================//
 @media (max-width: 620px)
@@ -166,6 +223,35 @@
       line-height: 23px
   .card
     height: 200px 
+  .packages
+    &-grid
+      grid-template-columns: repeat(auto-fit,minmax(260px, 1fr))
+    &-item
+      grid-column: 1 / -1
+      &:first-child
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr))
+        grid-template-rows: minmax(200px, 293px)
+        grid-column: 1 / -1
+      &__price
+        flex-direction: column
+        align-items: flex-start
+      &__pricetag
+        margin-bottom: 15px
+      &__btn
+        width: 100%
+//================================================//
+@media (max-width: 557px)
+  .packages
+    &-container
+      max-width: 80%
+    &-grid
+      grid-template-columns: 1fr
+    &-item
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(auto-fit, minmax(200px, 321px))
+      &:first-child
+        grid-template-rows: repeat(auto-fit, minmax(200px, 321px))
+
 //================================================//
  
 @media (min-width: 319px) and (max-width: 420px) 
@@ -237,3 +323,9 @@
     width: 83%
     min-width: 280px
     height: 255px
+  .packages
+    &-item
+      grid-template-rows: repeat(auto-fit, minmax(200px, 250px))
+      &:first-child
+        grid-template-rows: repeat(auto-fit, minmax(200px, 250px))    
+    

@@ -1,0 +1,90 @@
+.packages
+  padding-top: 40px
+  padding-bottom: 70px
+  &__title
+    margin-bottom: 65px
+    font-weight: 700
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+  &-grid
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    column-gap: 30px
+    row-gap: 30px
+  &-offer
+    position: absolute
+    top: 20px
+    left: 0
+    z-index: 2
+  &-item
+    background-color: $dark
+    border-radius: 8px
+    overflow: hidden
+    color: $light
+    &:first-child
+      display: grid
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+      grid-template-rows: minmax(400px, 500px)
+      grid-column: 1 / 3
+    &__inner
+      position: relative
+      z-index: 0
+    &__descr
+      padding: 30px 21px 25px 32px
+      &--big
+        padding: 36px 20px 30px 47px
+    &__subtitle
+      margin-bottom: 23px
+      font-weight: 700
+      font-size: 18px
+      line-height: 23px
+      &--big
+        margin-bottom: 27px
+    &__info
+      margin-bottom: 47px 
+      font-size: 14px
+      line-height: 160.6%
+    &__room
+      max-width: 100%
+      margin-bottom: 24px
+      &--big
+        margin-bottom: 37px
+      &-icon
+        margin-right: 14px
+      &-text
+        justify-content: start
+    &__stars
+      margin-bottom: 5px
+    &__img
+      width: 100%
+      height: 100%
+      object-fit: cover       
+    &__price
+      max-width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__pricetag-last
+      margin-bottom: 5px
+      width: 68%
+      text-decoration-line: line-through
+      font-size: 14px
+      line-height: 18px
+    &__pricetag
+      font-weight: 700
+      font-size: 24px
+      line-height: 30px
+    &__btn
+      @include btn
+      min-width: 120px
+      padding-top: 11px
+      padding-bottom: 10px
+      font-size: 14px
+      line-height: 19px
+      
+      
+      
+
+

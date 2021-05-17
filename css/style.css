@@ -956,7 +956,7 @@ template {
   position: absolute;
   top: 26px;
   left: 0;
-  width: 60px;
+  width: 61px;
   max-width: 30%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1006,7 +1006,7 @@ template {
 }
 
 .packages-item__room {
-  max-width: 100%;
+  max-width: 90%;
   margin-bottom: 24px;
 }
 
@@ -1062,6 +1062,7 @@ template {
 }
 
 .packages-item__pricetag {
+  max-width: 55%;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -1712,7 +1713,7 @@ template {
     position: absolute;
     top: 26px;
     left: 0;
-    width: 60px;
+    width: 61px;
     max-width: 30%;
     padding-top: 4px;
     padding-bottom: 4px;

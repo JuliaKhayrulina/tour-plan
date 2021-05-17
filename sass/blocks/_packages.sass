@@ -21,7 +21,7 @@
   &-item
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
-    grid-template-rows: minmax(250px, 1fr)
+    grid-template-rows: minmax(250px, 1fr) 
     background-color: $dark
     border-radius: 8px
     overflow: hidden
@@ -29,7 +29,6 @@
     &:first-child
       display: grid
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
-      grid-template-rows: minmax(400px, 500px)
       grid-column: 1 / 3
     &__inner
       position: relative
@@ -85,7 +84,7 @@
       font-size: 14px
       line-height: 18px
     &__pricetag
-      max-width: 55%
+      max-width: 50%
       font-weight: 700
       font-size: 24px
       line-height: 30px

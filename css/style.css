@@ -939,8 +939,6 @@ template {
   display: grid;
   -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  -ms-grid-rows: minmax(400px, 500px);
-      grid-template-rows: minmax(400px, 500px);
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 / 3;
@@ -1062,14 +1060,14 @@ template {
 }
 
 .packages-item__pricetag {
-  max-width: 55%;
+  max-width: 50%;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
 
 .packages-item__btn {
-  max-width: 100%;
+  max-width: 45%;
   padding: 7px 10px 7px 10px;
   border-radius: 4px;
   background-color: #EC1F46;
@@ -1439,10 +1437,6 @@ template {
             column-gap: 15px;
     row-gap: 15px;
   }
-  .packages-item:first-child {
-    -ms-grid-rows: minmax(400px, 1fr);
-        grid-template-rows: minmax(400px, 1fr);
-  }
   .packages-item__descr--big {
     padding: 20px 21px 25px 32px;
   }
@@ -1552,10 +1546,6 @@ template {
     -webkit-column-gap: 30px;
             column-gap: 30px;
     row-gap: 30px;
-  }
-  .packages-item:first-child {
-    -ms-grid-rows: minmax(400px, 495px);
-        grid-template-rows: minmax(400px, 495px);
   }
   .packages-item__subtitle--big {
     margin-bottom: 27px;
@@ -1694,8 +1684,6 @@ template {
     grid-column: 1 / 1;
     -ms-grid-columns: (minmax(200px, 288px))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(200px, 288px));
-    -ms-grid-rows: minmax(200px, 250px);
-        grid-template-rows: minmax(200px, 250px);
   }
   .packages-item__descr--big {
     padding: 30px 21px 25px 32px;
@@ -1753,8 +1741,6 @@ template {
   .packages-item:first-child {
     -ms-grid-columns: (minmax(260px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    -ms-grid-rows: minmax(200px, 293px);
-        grid-template-rows: minmax(200px, 293px);
     grid-column: 1 / -1;
   }
   .packages-item__price {
@@ -1771,6 +1757,7 @@ template {
   }
   .packages-item__btn {
     width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -1783,8 +1770,8 @@ template {
         grid-template-columns: 1fr;
   }
   .packages-item {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
     -ms-grid-rows: (minmax(200px, 321px))[auto-fit];
         grid-template-rows: repeat(auto-fit, minmax(200px, 321px));
   }
@@ -1903,7 +1890,7 @@ template {
     right: 13%;
   }
   .card {
-    width: 83%;
+    width: 100%;
     min-width: 280px;
     height: 255px;
   }

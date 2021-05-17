@@ -10,8 +10,6 @@
       column-gap: 15px
       row-gap: 15px
     &-item
-      &:first-child
-        grid-template-rows: minmax(400px, 1fr)
       &__descr
         &--big
           padding: 20px 21px 25px 32px
@@ -96,7 +94,6 @@
       row-gap: 30px
     &-item
       &:first-child
-        grid-template-rows: minmax(400px, 495px)
       &__subtitle
         &--big
           margin-bottom: 27px
@@ -186,7 +183,6 @@
       &:first-child
         grid-column: 1 / 1
         grid-template-columns: repeat(auto-fit, minmax(200px, 288px))
-        grid-template-rows: minmax(200px, 250px)
       &__descr
         &--big
           padding: 30px 21px 25px 32px  
@@ -226,7 +222,6 @@
       grid-column: 1 / -1
       &:first-child
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr))
-        grid-template-rows: minmax(200px, 293px)
         grid-column: 1 / -1
       &__price
         flex-direction: column
@@ -235,6 +230,7 @@
         margin-bottom: 15px
       &__btn
         width: 100%
+        max-width: 100%  
 //================================================//
 @media (max-width: 557px)
   .packages
@@ -243,14 +239,15 @@
     &-grid
       grid-template-columns: 1fr
     &-item
-      grid-template-columns: 1fr
+      grid-template-columns: 100%
       grid-template-rows: repeat(auto-fit, minmax(200px, 321px))
       &:first-child
         grid-template-rows: repeat(auto-fit, minmax(200px, 321px))
       &__offer
         @include offer-big 
         &--big
-          @include offer-big  
+          @include offer-big
+      
 
 //================================================//
  
@@ -320,7 +317,7 @@
         &--next
           right: 13%
   .card
-    width: 83%
+    width: 100%
     min-width: 280px
     height: 255px
   .packages

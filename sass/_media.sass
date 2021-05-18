@@ -13,6 +13,9 @@
       &__descr
         &--big
           padding: 20px 21px 25px 32px
+  .footer
+    &-wrapper
+      grid-template-columns: 25.1% 22.6% 31.5% 20.5%
                  
 //==============================================//
 @media ( max-width: 992px )
@@ -99,6 +102,47 @@
           margin-bottom: 27px
       &__info
         margin-bottom: 47px 
+  .footer
+    padding-top: 73px
+    &-wrapper
+      grid-template-columns: 27.5% 42.5% 28.8%
+      row-gap: 37px
+    &__logo
+      width: 104px
+      grid-row: 1 / 2
+      grid-column: span 1
+    &__social
+      &-network
+        align-self: center
+        grid-row: 1 / 2
+        grid-column: span 2 
+    &__categories
+      grid-row: 2 / 3
+      grid-column: 1 / 2
+    &__additional
+      grid-row: 2 / 3
+      grid-column: 2 / 3
+    &__legal
+      grid-row: 2 / 3
+      grid-column: 3 / 4
+    &__contact-details
+      grid-row: 3 / 4
+      grid-column: 1 / 4
+    &__contacts-form
+      grid-row: 4 / 5
+      grid-column: 1 / 4
+      width: 78%
+    &__title
+      &--mt-contact
+        margin-top: 27px
+      &--mb-message
+        margin-bottom: 38px
+    &__icon
+      padding-left: 8px
+    &-bottom
+      padding-top: 20px
+      &__inner
+        width: 100%
 
 //==============================================//      
 @media (max-width: 767px)
@@ -196,7 +240,12 @@
         display: none
       &__offer
         &--big
-          @include offer-small  
+          @include offer-small 
+  .footer
+    &-wrapper
+      grid-template-columns: 33.5% 38.5% 27.8%
+    &__nav
+      width: 96%
 //==============================================//
 @media (max-width: 620px)
   .logo
@@ -231,6 +280,53 @@
       &__btn
         width: 100%
         max-width: 100%  
+  .footer
+    padding-top: 69px
+    &-wrapper
+      grid-template-columns: repeat(auto-fill, 100%)
+    &__logo
+      width: 104px
+      grid-row: 1 / 2
+      grid-column: span 1
+    &__social
+      &-network
+        align-self: center
+        grid-row: 2 / 3
+        grid-column: 1 / 2
+    &__legal
+      grid-row: 3 / 4
+      grid-column: 1 / 2
+    &__additional
+      grid-row: 4 / 5
+      grid-column: 1 / 2
+    &__categories
+      grid-row: 5 / 6
+      grid-column: 1 / 2  
+    &__contact-details
+      grid-row: 6 / 7
+      grid-column: 1 / 2
+    &__contacts-form
+      grid-row: 7 / 8
+      grid-column: 1 / 2
+      width: 100%
+    &__form
+      &-submit
+        flex-basis: 45%
+        flex-direction: column
+      &-input
+        flex-basis: 100%
+    &__info
+      order: -1
+      margin-bottom: 15px
+    &-bottom
+      &__inner
+        flex-direction: column
+        align-items: center
+        width: 100%
+      &__list
+        max-width: 100%
+       
+    
 //================================================//
 @media (max-width: 557px)
   .packages
@@ -247,6 +343,10 @@
         @include offer-big 
         &--big
           @include offer-big
+    .footer
+      &-wrapper
+       
+
       
 
 //================================================//
@@ -327,5 +427,40 @@
     &-item
       grid-template-rows: repeat(auto-fit, minmax(200px, 250px))
       &:first-child
-        grid-template-rows: repeat(auto-fit, minmax(200px, 250px))    
+        grid-template-rows: repeat(auto-fit, minmax(200px, 250px))   
+  .footer
+    &-wrapper
+      row-gap: 30px
+    &__social
+      &-network
+        flex-direction: column
+        align-items: start
+    &__title
+      &--mr-social 
+        margin-bottom: 20px
+      &--mt-contact 
+        margin-top: 14px
+      &--mb-message 
+        margin-bottom: 17px
+    &__text 
+      margin-bottom: 19px
+    &__icon
+      &-wrapper 
+        min-width: 32px
+    &__contact-details
+      margin-bottom: 10px
+      max-width: 100%
+    &__icon
+      padding-left: 5px
+      padding-top: 7px
+    &__form
+      &-input
+        margin-bottom: 13px
+      &-message
+        margin: 0
+    &-bottom
+      padding: 0
+      &__inner
+        align-items: start
+     
     

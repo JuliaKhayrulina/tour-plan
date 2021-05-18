@@ -38,3 +38,10 @@ const rewiewsSwiper = new Swiper('.reviews__swiper-container', {
 });
 
 $('.parallax-window').parallax({ imageSrc: 'img/bg-newsletter.jpg' });
+
+//menu
+
+let menu = document.querySelector('.menu-button');
+menu.addEventListener('click', () => {
+  document.querySelector('.navbar-menu').classList.toggle('navbar-menu--visible');
+});

@@ -41,7 +41,14 @@ $('.parallax-window').parallax({ imageSrc: 'img/bg-newsletter.jpg' });
 
 //menu
 
-let menu = document.querySelector('.menu-button');
-menu.addEventListener('click', () => {
-  document.querySelector('.navbar-menu').classList.toggle('navbar-menu--visible');
+let menuBtn = document.querySelector('.menu-button');
+let menu = document.querySelector('.navbar-menu');
+let menuLines = document.querySelectorAll('.menu-button__line');
+
+menuBtn.addEventListener('click', function () {
+  menuLines.forEach((item) => {
+    item.classList.toggle('menu-button__line--active');
+  });
+
+  menu.classList.toggle('navbar-menu--visible');
 });

@@ -1387,7 +1387,7 @@ template {
 }
 
 .card__title {
-  max-width: 100%;
+  max-width: 200px;
   margin-top: auto;
   margin-bottom: 18px;
   font-weight: 700;
@@ -1837,9 +1837,6 @@ template {
     width: 339px;
     margin-bottom: 20px;
   }
-  .card__title {
-    max-width: 71%;
-  }
   .packages-grid {
     -webkit-column-gap: 30px;
             column-gap: 30px;
@@ -1960,9 +1957,6 @@ template {
     display: -ms-flexbox;
     display: flex;
   }
-  .navbar__search__input, .navbar__user__input {
-    width: 80%;
-  }
   .navbar__user {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1976,9 +1970,10 @@ template {
     position: fixed;
     right: -100%;
     top: 78px;
-    padding-top: 30px;
+    width: 100vw;
     height: 100vh;
-    width: 60vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
     opacity: 0;
     -webkit-transition: all .8s;
     -o-transition: all .8s;
@@ -1989,6 +1984,11 @@ template {
     opacity: 1;
   }
   .navbar-menu__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+    max-height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1999,6 +1999,9 @@ template {
   }
   .navbar-menu__item--mobile-visible {
     display: block;
+  }
+  .navbar-menu__item--mobile-visible:nth-child(2) {
+    margin-bottom: 39px;
   }
   .user__name--light {
     color: #fff;
@@ -2170,71 +2173,6 @@ template {
     line-height: 10px;
     text-align: center;
   }
-  .footer-wrapper {
-    -ms-grid-columns: 33.5% 38.5% 27.8%;
-        grid-template-columns: 33.5% 38.5% 27.8%;
-  }
-  .footer__nav {
-    width: 96%;
-  }
-}
-
-@media (max-width: 620px) {
-  .navbar-menu {
-    width: 100vw;
-  }
-  .navbar__search {
-    margin-right: 0;
-  }
-  .search__input {
-    width: 80vw;
-  }
-  .logo {
-    width: 99px;
-  }
-  .reviews-slider__item {
-    width: 95%;
-  }
-  .activities {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  .activities__title {
-    margin-bottom: 36px;
-    font-size: 18px;
-    line-height: 23px;
-  }
-  .card {
-    height: 200px;
-  }
-  .packages-grid {
-    -ms-grid-columns: (minmax(260px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  }
-  .packages-item {
-    grid-column: 1 / -1;
-  }
-  .packages-item:first-child {
-    -ms-grid-columns: (minmax(260px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    grid-column: 1 / -1;
-  }
-  .packages-item__price {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .packages-item__pricetag {
-    margin-bottom: 15px;
-  }
-  .packages-item__btn {
-    width: 100%;
-    max-width: 100%;
-  }
   .footer {
     padding-top: 69px;
   }
@@ -2334,7 +2272,67 @@ template {
   }
 }
 
+@media (max-width: 620px) {
+  .navbar__search {
+    margin-right: 0;
+  }
+  .logo {
+    width: 99px;
+  }
+  .reviews-slider__item {
+    width: 95%;
+  }
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .activities__title {
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .card {
+    height: 200px;
+  }
+  .packages-grid {
+    -ms-grid-columns: (minmax(260px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  .packages-item {
+    grid-column: 1 / -1;
+  }
+  .packages-item:first-child {
+    -ms-grid-columns: (minmax(260px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-column: 1 / -1;
+  }
+  .packages-item__price {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .packages-item__pricetag {
+    margin-bottom: 15px;
+  }
+  .packages-item__btn {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 557px) {
+  .search__input {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+    min-width: 280px;
+    height: 255px;
+  }
   .packages-container {
     max-width: 80%;
   }
@@ -2461,11 +2459,6 @@ template {
   }
   .reviews__slider-button--next {
     right: 13%;
-  }
-  .card {
-    width: 100%;
-    min-width: 280px;
-    height: 255px;
   }
   .packages__title {
     font-size: 18px;

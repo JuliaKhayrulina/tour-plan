@@ -1,3 +1,30 @@
+@media ( min-width: 992px) and (max-width: 1920px)
+  .navbar
+    &-menu
+      &__link
+        &:hover
+          &::after
+            height: 3px
+            opacity: 1
+            transform: translateY(5px)
+  .btn-hover
+    transition: .3s all
+    &:hover 
+      background-color: #ce0c42
+  .footer
+    &__item, 
+      &-link, &-email
+        transition: .2s
+        &:hover
+          font-weight: 700
+          color: $primary
+    &-bottom
+      &__link
+        transition: .2s
+        &:hover
+          font-weight: 700
+          color: $primary
+
 @media ( max-width: 1200px )
   .container
     max-width: 960px
@@ -143,7 +170,7 @@
         width: 100%
 
 //==============================================//      
-@media (max-width: 767px)
+@media (max-width: 767px) 
   body
     padding-top: 78px
   .container, .newsletter-wrapper
@@ -176,6 +203,7 @@
       height: 100vh
       padding-top: 30px
       padding-bottom: 30px
+      overflow: auto
       opacity: 0
       transition: all .8s
       &--visible
@@ -185,17 +213,21 @@
         position: absolute
         left: 0
         right: 0
+        height: 70%
+        padding: 0 0 55px 0
         overflow-y: scroll
-        max-height: 100%
         flex-direction: column
+        line-height: 0.5
       &__item
         margin-bottom: 20px
         &--mobile
           &-visible
             display: block
+            min-width: 245px
+            &:nth-child(1)
+              margin-bottom: 30px
             &:nth-child(2)
-              margin-bottom: 39px
-        
+              margin-bottom: 39px    
   .user
     &__name
       &--light

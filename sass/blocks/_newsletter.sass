@@ -45,7 +45,9 @@
     font-weight: 300
     font-size: 14px
     line-height: 18px
-    color: #BDBDBD
+    color: #000
+    &::placeholder
+      color: #BDBDBD 
   &__btn
     position: absolute
     content: ''
@@ -59,11 +61,6 @@
     line-height: 15px
     color: $light
     background-color: $primary
-    transition: .3s
-    &:hover
-      background-color: #f70743
-    &:active
-      background-color: #e4063e
 
 .parallax-window 
   background: transparent

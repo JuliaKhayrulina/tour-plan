@@ -32,7 +32,7 @@
     width: 590px
   .card
     width: 230px
-  .packages
+  .packages, .restaurants
     &-grid
       column-gap: 15px
       row-gap: 15px
@@ -56,6 +56,7 @@
     &-menu
       height: 60px
       &__list
+        flex-wrap: nowrap
         padding: 20px 14px
       &__link
         font-size: 11.5px
@@ -116,7 +117,7 @@
   .card
     width: 339px
     margin-bottom: 20px
-  .packages
+  .packages, .restaurants
     &-grid
       column-gap: 30px
       row-gap: 30px
@@ -307,7 +308,7 @@
           right: 20%
   .card
     width: 49% 
-  .packages
+  .packages, .restaurants
     &-container
       width: 95%
     &__title
@@ -384,8 +385,7 @@
         max-width: 100%
   .modal
     &__dialog
-   
-    padding: 23px 66px
+      padding: 23px 66px
     &__form
       &-submit
         flex-direction: column
@@ -413,7 +413,7 @@
       line-height: 23px
   .card
     height: 200px 
-  .packages
+  .packages, .restaurants
     &-grid
       grid-template-columns: repeat(auto-fit,minmax(260px, 1fr))
     &-item
@@ -447,7 +447,15 @@
     width: 100%
     min-width: 280px
     height: 255px
-  .packages
+    &:nth-child(1) 
+      order: 1
+    &:nth-child(2) 
+      order: 3
+    &:nth-child(3) 
+      order: 2
+    &:nth-child(4) 
+      order: 4
+  .packages, .restaurants
     &-container
       max-width: 80%
     &-grid
@@ -473,8 +481,6 @@
   .container
     max-width: 88%
   .navbar
-    &-top
-      //padding-top: 23px
     &__search
       &--mobile
         &-visible
@@ -538,7 +544,7 @@
           left: 12%
         &--next
           right: 13%
-  .packages
+  .packages, .restaurants
     &__title
         font-size: 18px
         line-height: 23px

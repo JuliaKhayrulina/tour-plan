@@ -1,131 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <title>Best Tour Plan - Hotel Booking</title>
-  </head>
-  <body>
-    <header class="navbar navbar--mobile-fixed">
-      <div class="container">
-        <div class="navbar-top">
-          <a href="index.html" class="logo">
-            <img src="./img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
-          </a>
-
-          <form action="#" class="search navbar__search navbar__search--mobile-hidden">
-            <input type="text" class="search__input" placeholder="Search Location" />
-            <button class="search__btn">
-              <img src="./img/search.svg" alt="icon: search" />
-            </button>
-          </form>
-
-          <a href="#" class="user navbar__user navbar__user--mobile-hidden">
-            <img src="./img/user_avatar.jpg" alt="user: Nathan" class="user__avatar" />
-            <span class="user__name">Nathan</span>
-          </a>
-          <button class="menu-button navbar-top__menu-button">
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
-          </button>
-        </div>
-      </div>
-
-      <nav class="navbar-menu">
-        <div class="container">
-          <ul class="navbar-menu__list">
-            <li class="navbar-menu__item navbar-menu__item--mobile-visible">
-              <a href="#" class="user navbar__user navbar__user--mobile-visible">
-                <img src="./img/user_avatar.jpg" alt="user: Nathan" class="user__avatar" />
-                <span class="user__name user__name--light">Nathan</span>
-              </a>
-            </li>
-            <li class="navbar-menu__item navbar-menu__item--mobile-visible">
-              <form action="#" class="search navbar__search navbar__search--mobile-visible">
-                <input type="text" class="search__input" placeholder="Search Location" />
-                <button class="search__btn">
-                  <img src="./img/search.svg" alt="icon: search" />
-                </button>
-              </form>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">All Deals</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Hotels</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Activities</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Restaurants</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Events</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Rodrigues</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <nav class="breadcrumb">
-      <div class="container">
-        <ul class="breadcrumb-list">
-          <li class="breadcrumb-list__item">
-            <a href="#" class="breadcrumb-list__link">Home</a>
-          </li>
-          <li class="breadcrumb-list__item">
-            <a href="#" class="breadcrumb-list__link">Flash Offers</a>
-          </li>
-          <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
-        </ul>
-      </div>
-    </nav>
-
-    <section class="hotel">
-      <div class="container">
-        <div class="hotel-info">
-          <div class="hotel-info__text">
-            <div class="hotel-wrapper">
-              <h1 class="hotel-name hotel-info__name thanks-title">Message sent</h1>
-            </div>
-            <p class="hotel-description hotel-info__description thanks-text">
-              Thank you for contacting us! Our specialists will get in touch with you as soon as
-              possible.
-            </p>
-            <a href="index.html" class="thanks-back">go to the main page</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer__logo">
-            <img
-              src="./img/vertical-logo.svg"
-              alt="logo: Best Tour Plan"
-              class="footer__logo-img"
-            />
+            <a href="index.php" class="footer__link-logo">
+              <img
+                src="./img/vertical-logo.svg"
+                alt="logo: Best Tour Plan"
+                class="footer__logo-img"
+              />
+            </a>
           </div>
           <div class="footer__nav footer__categories">
             <h3 class="footer__title">All categories</h3>
@@ -257,7 +140,7 @@
                 name="message"
               ></textarea>
               <div class="footer__form-submit">
-                <button type="submit" class="btn footer__form-btn">Send</button>
+                <button type="submit" class="footer__form-btn btn-hover">Send</button>
                 <span class="footer__info">* Required Fields</span>
               </div>
             </form>
@@ -287,6 +170,65 @@
         </div>
       </div>
     </footer>
+    <div class="modal" id="booking-modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="./img/close.svg" alt="icon: close" />
+        </a>
+        <h3 class="modal__title modal__title--mb-message">Booking</h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input
+            type="text"
+            class="input modal__form-input"
+            placeholder="Your Full Name*"
+            name="name"
+          />
+          <input
+            type="text"
+            class="input modal__form-input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input type="text" class="input modal__form-input" placeholder="Email*" name="email" />
+          <textarea class="modal__form-message" placeholder="Message" name="message"></textarea>
+          <div class="modal__form-submit">
+            <button type="submit" class="modal__form-btn btn-hover">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal" id="rating-modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__dialog">
+        <a href="#" class="modal__close close">
+          <img src="./img/close.svg" alt="icon: close" />
+        </a>
+        <h3 class="modal__title modal__title--mb-message">Send us a feedback</h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input
+            type="text"
+            class="input modal__form-input"
+            placeholder="Your Full Name*"
+            name="name"
+          />
+          <input
+            type="text"
+            class="input modal__form-input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input type="text" class="input modal__form-input" placeholder="Email*" name="email" />
+          <textarea class="modal__form-message" placeholder="Message" name="message"></textarea>
+          <div class="modal__form-submit">
+            <button type="submit" class="modal__form-btn btn-hover">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./js/parallax.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>

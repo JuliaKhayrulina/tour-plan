@@ -47,15 +47,15 @@ $(document).ready(function () {
     menu.classList.toggle('navbar-menu--visible');
   });
 
-  //===================modal===========================//
+  //===================modal windows===========================//
 
-  const modalBtn = document.querySelectorAll('[data-toggle=modal]');
+  const openModalBtn = document.querySelectorAll('[data-toggle=modal]');
   const closeModalBtn = document.querySelector('.modal__close');
   const closeModalButton = document.querySelector('.close');
-  closeModalBtn.addEventListener('click', closeModal);
-  closeModalButton.addEventListener('click', closeModal);
+  const modalOverlay = document.querySelectorAll('.modal__overlay');
 
-  for (let button of modalBtn) {
+  //открытие по кнопкам
+  for (let button of openModalBtn) {
     button.addEventListener('click', openModal);
   }
 
@@ -63,6 +63,7 @@ $(document).ready(function () {
     const btn = this;
     const targetModal = btn.getAttribute('data-href');
     const childs = document.querySelector(`${targetModal}`).children;
+    document.body.classList.add('no-scroll');
 
     for (let child of childs) {
       if (child.classList.contains('modal__overlay')) {
@@ -72,6 +73,20 @@ $(document).ready(function () {
       }
     }
   }
+  //закрытие по кнопкам
+  closeModalBtn.addEventListener('click', closeModal);
+  closeModalButton.addEventListener('click', closeModal);
+
+  //закрытие вне модального окна
+  for (let overlay of modalOverlay) {
+    overlay.addEventListener('click', closeModal);
+  }
+  //закрытие по клавише Esc
+  document.addEventListener('keydown', (event) => {
+    if (event.key == 'Escape') {
+      closeModal(event);
+    }
+  });
 
   function closeModal(event) {
     event.preventDefault();
@@ -80,10 +95,6 @@ $(document).ready(function () {
 
     modalOverlay.classList.remove('modal__overlay--visible');
     modalDialog.classList.remove('modal__dialog--visible');
+    document.body.classList.remove('no-scroll');
   }
-  document.addEventListener('keydown', (event) => {
-    if (event.key == 'Escape') {
-      closeModal(event);
-    }
-  });
 });

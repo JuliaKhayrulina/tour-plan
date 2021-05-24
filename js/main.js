@@ -99,6 +99,7 @@ $(document).ready(function () {
   }
 
   //==========Validation of the form=================================//
+
   $('.form').each(function () {
     $(this).validate({
       success: function (label) {
@@ -108,7 +109,7 @@ $(document).ready(function () {
       rules: {
         name: {
           required: true,
-          minlength: '2',
+          minlength: 2,
         },
         email: {
           required: true,
@@ -116,7 +117,7 @@ $(document).ready(function () {
         },
         phone: {
           required: true,
-          minlength: 10,
+          minlength: 18,
         },
       },
       messages: {
@@ -130,7 +131,7 @@ $(document).ready(function () {
         },
         phone: {
           required: 'Please, enter your phone number',
-          minlength: 'Phone number must be 10 digits',
+          minlength: 'Phone number must be 11 digits',
         },
       },
     });

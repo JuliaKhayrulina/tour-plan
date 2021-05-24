@@ -202,11 +202,10 @@
           />
           <input
             type="tel"
-
             class="input modal__form-input phone-mask"
             placeholder="+7 (999) 999-99-99"
             name="phone"
-            minlength="10"
+            minlength="18"
             required
             autocomplete="off"
           />
@@ -240,6 +239,7 @@
             type="tel"
             class="input modal__form-input phone-mask"
             placeholder="+7 (999) 999-99-99"
+            minlength="18"
             name="phone"
             required
             autocomplete="off"

@@ -121,24 +121,37 @@
           </div>
           <div class="footer__contacts-form">
             <h3 class="footer__title footer__title--mb-message">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__form-input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__form-input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
-              <textarea
-                class="footer__form-message"
-                placeholder="Message"
-                name="message"
-              ></textarea>
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__form-group">
+                <input
+                  type="text"
+                  class="input footer__form-input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  autocomplete="off"
+                  minlength="2"
+                  required
+                />
+              </div>
+             <div class="footer__form-group">
+                <input
+                  type="tel"
+                  class="input footer__form-input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  autocomplete="off"
+                  minlength="10"
+                  required
+                />
+             </div>
+              
+                <textarea
+                  class="footer__form-message"
+                  placeholder="Message"
+                  name="message"
+                  required
+                ></textarea>
+            
               <div class="footer__form-submit">
                 <button type="submit" class="footer__form-btn btn-hover">Send</button>
                 <span class="footer__info">* Required Fields</span>
@@ -177,21 +190,28 @@
           <img src="./img/close.svg" alt="icon: close" />
         </a>
         <h3 class="modal__title modal__title--mb-message">Booking</h3>
-        <form action="send.php" method="POST" class="modal__form">
+        <form action="send.php" method="POST" class="modal__form form">
           <input
             type="text"
             class="input modal__form-input"
             placeholder="Your Full Name*"
             name="name"
+            minlength="2"
+            required
+            autocomplete="off"
           />
           <input
-            type="text"
-            class="input modal__form-input"
-            placeholder="Phone Number*"
+            type="tel"
+
+            class="input modal__form-input phone-mask"
+            placeholder="+7 (999) 999-99-99"
             name="phone"
+            minlength="10"
+            required
+            autocomplete="off"
           />
-          <input type="text" class="input modal__form-input" placeholder="Email*" name="email" />
-          <textarea class="modal__form-message" placeholder="Message" name="message"></textarea>
+          <input type="email" class="input modal__form-input" placeholder="Email*" name="email" required  autocomplete="off" />
+          <textarea class="modal__form-message" placeholder="Message" name="message" required></textarea>
           <div class="modal__form-submit">
             <button type="submit" class="modal__form-btn btn-hover">Send</button>
             <span class="modal__info">* Required Fields</span>
@@ -206,21 +226,26 @@
           <img src="./img/close.svg" alt="icon: close" />
         </a>
         <h3 class="modal__title modal__title--mb-message">Send us a feedback</h3>
-        <form action="send.php" method="POST" class="modal__form">
+        <form action="send.php" method="POST" class="modal__form form">
           <input
             type="text"
             class="input modal__form-input"
             placeholder="Your Full Name*"
             name="name"
+            minlenght="2"
+            required
+            autocomplete="off"
           />
           <input
-            type="text"
-            class="input modal__form-input"
-            placeholder="Phone Number*"
+            type="tel"
+            class="input modal__form-input phone-mask"
+            placeholder="+7 (999) 999-99-99"
             name="phone"
+            required
+            autocomplete="off"
           />
-          <input type="text" class="input modal__form-input" placeholder="Email*" name="email" />
-          <textarea class="modal__form-message" placeholder="Message" name="message"></textarea>
+          <input type="email" class="input modal__form-input" placeholder="Email*" name="email" required  autocomplete="off"/>
+          <textarea class="modal__form-message" placeholder="Message" name="message" required></textarea>
           <div class="modal__form-submit">
             <button type="submit" class="modal__form-btn btn-hover">Send</button>
             <span class="modal__info">* Required Fields</span>
@@ -228,8 +253,11 @@
         </form>
       </div>
     </div>
-    <script src="./js/jquery-3.6.0.min.js"></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/parallax.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>

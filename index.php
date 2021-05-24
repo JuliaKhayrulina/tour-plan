@@ -368,8 +368,8 @@
       <h2 class="newsletter-title">subscribe to our</h2>
       <span class="newsletter-strong">Newsletter</span>
     </div>
-    <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-      <input type="text" class="subscribe__input" placeholder="Your email address" name="email" />
+    <form action="send.php" method="POST" class="form subscribe newsletter__subscribe">
+      <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required/>
       <button class="subscribe__btn btn-hover">Send</button>
     </form>
   </div>

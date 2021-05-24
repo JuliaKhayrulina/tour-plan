@@ -52,7 +52,7 @@
       margin-top: 11px
       margin-bottom: 26px
     &--mb-message
-      margin-bottom: 35px
+      margin-bottom: 3px
   &__item, &__text
     font-size: 14px
     line-height: 160%
@@ -85,15 +85,18 @@
       justify-content: space-between
     &-input
       @include input
-      flex-basis: 47%
-      margin-bottom: 15px
+      width: 100%
+      margin-top: 15px
     &-message
       @include textarea
-      margin-bottom: 23px
+      margin-top: 15px
       flex-basis: 100%
     &-btn
       @include btn-form
+      margin-top: 23px
       grid-row: 4 / 6
+    &-group
+      flex-basis: 47%
   &__info
     margin-top: 17px
     font-weight: 700

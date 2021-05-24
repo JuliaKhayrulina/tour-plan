@@ -97,4 +97,45 @@ $(document).ready(function () {
     modalDialog.classList.remove('modal__dialog--visible');
     document.body.classList.remove('no-scroll');
   }
+
+  //==========Validation of the form=================================//
+  $('.form').each(function () {
+    $(this).validate({
+      success: function (label) {
+        label.addClass('valid').text('Success!');
+      },
+      errorClass: 'invalid',
+      rules: {
+        name: {
+          required: true,
+          minlength: '2',
+        },
+        email: {
+          required: true,
+          email: true,
+        },
+        phone: {
+          required: true,
+          minlength: 10,
+        },
+      },
+      messages: {
+        name: {
+          required: 'Please specify your name',
+          minlength: 'The name must be at least 2 characters',
+        },
+        email: {
+          required: 'We need your email address to contact you',
+          email: 'Your email address must be in the format of name@domain.com',
+        },
+        phone: {
+          required: 'Please, enter your phone number',
+          minlength: 'Phone number must be 10 digits',
+        },
+      },
+    });
+  });
+  $('.phone-mask').each(function () {
+    $(this).mask('+7 (999) 999-99-99');
+  });
 });

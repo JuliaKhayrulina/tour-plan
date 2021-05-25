@@ -94,9 +94,12 @@
                   <img src="./img/phone-footer.svg" alt="icon: phone" class="footer__icon" />
                 </div>
                 <div class="footer__text-wrapper">
-                  <a href="tel:2691500" class="footer__item-number"
-                    >Tel (business hours) : 269 1500
-                  </a>
+                 <p class="footer__item-schedule">
+                    Tel (business hours) :
+                    <a href="tel:2691500" class="footer__item-number"
+                      > 269 1500
+                    </a>
+                 </p>
                   <p class="footer__item-schedule">
                     Tel (hotline) Monday - Saturday:
                     <a href="tel:52566138" class="footer__item-number">52-56-61-38</a>
@@ -260,6 +263,7 @@
     <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/parallax.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

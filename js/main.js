@@ -102,9 +102,6 @@ $(document).ready(function () {
 
   $('.form').each(function () {
     $(this).validate({
-      success: function (label) {
-        label.addClass('valid').text('Success!');
-      },
       errorClass: 'invalid',
       rules: {
         name: {
@@ -136,7 +133,10 @@ $(document).ready(function () {
       },
     });
   });
+
   $('.phone-mask').each(function () {
     $(this).mask('+7 (999) 999-99-99');
   });
+
+  AOS.init();
 });

@@ -883,16 +883,18 @@ template {
   max-width: 100%;
 }
 
-.map {
+.container-fluid {
   width: 347px;
   height: 213px;
+  background-image: url("../img/map-mask.jpg");
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.map__google {
+.map-google {
   width: 100%;
   height: 100%;
   border: none;
-  border-radius: 10px;
 }
 
 .packages {
@@ -1141,7 +1143,6 @@ template {
   position: relative;
   width: 350px;
   height: 55px;
-  border-radius: 4px;
 }
 
 .subscribe__input {
@@ -1150,6 +1151,7 @@ template {
   padding: 19px 80px 19px 33px;
   outline: none;
   border: none;
+  border-radius: 4px;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
@@ -1184,6 +1186,8 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #fff;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   background-color: #EC1F46;
 }
 
@@ -1256,6 +1260,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   margin-top: -45px;
+  margin-bottom: 32px;
 }
 
 .reviews-slider__avatar {
@@ -1281,12 +1286,13 @@ template {
 }
 
 .reviews-slider__text {
-  padding: 32px 35px 0 35px;
-  max-height: 55%;
+  padding: 0 35px 0 35px;
+  max-width: 607px;
+  max-height: 130px;
   font-size: 12px;
   line-height: 18px;
   text-align: justify;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .reviews__slider {
@@ -1677,7 +1683,7 @@ template {
 }
 
 .footer__title--mb-message {
-  margin-bottom: 22px;
+  margin-bottom: 35px;
 }
 
 .footer__item, .footer__text {
@@ -1733,6 +1739,7 @@ template {
 }
 
 .footer__form-submit {
+  margin-top: 23px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   display: -webkit-box;
@@ -1741,6 +1748,9 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__form-input {
@@ -1754,7 +1764,6 @@ template {
   line-height: 15px;
   color: #000;
   width: 100%;
-  margin-top: 15px;
 }
 
 .footer__form-input::-webkit-input-placeholder {
@@ -1816,7 +1825,6 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  margin-top: 23px;
   -ms-grid-row: 4;
   -ms-grid-row-span: 2;
   grid-row: 4 / 6;
@@ -1828,7 +1836,6 @@ template {
 }
 
 .footer__info {
-  margin-top: 17px;
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
@@ -2084,6 +2091,11 @@ template {
     font-weight: 700;
     color: #EC1F46;
   }
+  .footer__link-icon:hover {
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 7px 4px #ec1f46;
+            box-shadow: 0px 0px 7px 4px #ec1f46;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2177,7 +2189,7 @@ template {
     display: none;
   }
   .reviews-slider__text {
-    padding: 32px 0 0;
+    padding: 0;
   }
   .reviews-slider__avatar {
     margin-bottom: 10px;
@@ -2370,6 +2382,9 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     line-height: 0.5;
   }
   .navbar-menu__item {
@@ -2378,12 +2393,13 @@ template {
   .navbar-menu__item--mobile-visible {
     display: block;
     min-width: 245px;
+    padding-right: 0;
   }
   .navbar-menu__item--mobile-visible:nth-child(1) {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
   .navbar-menu__item--mobile-visible:nth-child(2) {
-    margin-bottom: 39px;
+    margin-bottom: 38px;
   }
   .user__name--light {
     color: #fff;
@@ -2467,8 +2483,12 @@ template {
             flex-direction: column;
     min-height: 450px;
   }
-  .booking, .map {
+  .booking {
     width: 100%;
+  }
+  .container-fluid {
+    width: 100%;
+    background-image: url("../img/map-mask-big.jpg");
   }
   .newsletter {
     padding: 76px 20px 83px 20px;
@@ -2622,16 +2642,24 @@ template {
     width: 100%;
   }
   .footer__form-submit {
+    margin-top: 18px;
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .footer__form-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    margin-bottom: 13px;
+  }
+  .footer__form-message {
+    margin-top: 0;
   }
   .footer__info {
     -webkit-box-ordinal-group: 0;
@@ -2679,6 +2707,9 @@ template {
   }
   .reviews-slider__item {
     width: 95%;
+  }
+  .reviews-slider__text {
+    max-height: 235px;
   }
   .activities {
     padding-top: 40px;
@@ -2843,7 +2874,7 @@ template {
   .booking__room {
     margin-top: 6px;
   }
-  .map {
+  .container-fluid {
     height: 173px;
   }
   .newsletter {
@@ -2871,6 +2902,9 @@ template {
     font-size: 18px;
     line-height: 23px;
   }
+  .reviews-slider__profile {
+    margin-bottom: 30px;
+  }
   .reviews-slider__item {
     width: 100%;
     min-width: 281px;
@@ -2880,7 +2914,7 @@ template {
     margin-bottom: 8px;
   }
   .reviews-slider__text {
-    padding-top: 30px;
+    max-height: 267px;
     text-align: left;
     line-height: 19px;
   }

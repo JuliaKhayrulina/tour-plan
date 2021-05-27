@@ -5,6 +5,7 @@
             <a href="index.php" class="footer__link-logo">
               <img
                 src="./img/vertical-logo.svg"
+                loading="lazy"
                 alt="logo: Best Tour Plan"
                 class="footer__logo-img"
               />
@@ -47,14 +48,14 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--mr-social">Social network</h3>
             <div class="footer__social-links">
-              <a href="https://www.facebook.com" class="footer__link">
-                <img src="./img/facebook.svg" alt="icon: facebook" />
+              <a href="https://www.facebook.com" class="footer__link" target="_blank" rel="nofollow noopener">
+                <img src="./img/facebook.svg" alt="icon: facebook" class="footer__link-icon" width="20" height="20" loading="lazy"/>
               </a>
-              <a href="https://www.youtube.co" class="footer__link">
-                <img src="./img/youtube.svg" alt="icon: youtube" />
+              <a href="https://www.youtube.co" class="footer__link" target="_blank" rel="nofollow noopener">
+                <img src="./img/youtube.svg" alt="icon: youtube" class="footer__link-icon" width="21" height="21"  loading="lazy"/>
               </a>
-              <a href="https://www.instagram.com" class="footer__link">
-                <img src="./img/instagram.svg" alt="icon:instagram" />
+              <a href="https://www.instagram.com" class="footer__link" target="_blank" rel="nofollow noopener">
+                <img src="./img/instagram.svg" alt="icon:instagram" class="footer__link-icon" width="20" height="20" loading="lazy"/>
               </a>
             </div>
           </div>
@@ -83,7 +84,7 @@
             <ul class="footer__list">
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img src="./img/map-marker.svg" alt="icon: placemark" class="footer__icon" />
+                  <img src="./img/map-marker.svg" alt="icon: placemark" class="footer__icon" width="14" height="20" loading="lazy"/>
                 </div>
                 <p class="footer__item-info">
                   9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
@@ -91,7 +92,7 @@
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img src="./img/phone-footer.svg" alt="icon: phone" class="footer__icon" />
+                  <img src="./img/phone-footer.svg" alt="icon: phone" class="footer__icon" width="20" height="20" loading="lazy" />
                 </div>
                 <div class="footer__text-wrapper">
                  <p class="footer__item-schedule">
@@ -114,7 +115,7 @@
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img src="./img/email.svg" alt="icon: email" class="footer__icon" />
+                  <img src="./img/email.svg" alt="icon: email" class="footer__icon" width="18" height="14" loading="lazy" />
                 </div>
                 <a href="mailto:cherly.lawson@example.com" class="footer__item-email">
                   cherly.lawson@example.com
@@ -139,8 +140,8 @@
              <div class="footer__form-group">
                 <input
                   type="tel"
-                  class="input footer__form-input"
-                  placeholder="Phone Number*"
+                  class="input footer__form-input phone-mask"
+                  placeholder="+7 (999) 999-99-99"
                   name="phone"
                   autocomplete="off"
                   minlength="10"
@@ -177,6 +178,7 @@
               <div class="footer-bottom__inner-img">
                 <img
                   src="./img/used.png"
+                  loading="lazy"
                   alt="icons: used application"
                   class="footer-bottom__img"
                 />
@@ -190,7 +192,7 @@
       <div class="modal__overlay"></div>
       <div class="modal__dialog">
         <a href="#" class="modal__close">
-          <img src="./img/close.svg" alt="icon: close" />
+          <img src="./img/close.svg" alt="icon: close" width="17" height="16" loading="lazy" />
         </a>
         <h3 class="modal__title modal__title--mb-message">Booking</h3>
         <form action="send.php" method="POST" class="modal__form form">
@@ -225,7 +227,7 @@
       <div class="modal__overlay"></div>
       <div class="modal__dialog">
         <a href="#" class="modal__close close">
-          <img src="./img/close.svg" alt="icon: close" />
+          <img src="./img/close.svg" alt="icon: close" width="17" height="16" loading="lazy"/>
         </a>
         <h3 class="modal__title modal__title--mb-message">Send us a feedback</h3>
         <form action="send.php" method="POST" class="modal__form form">
@@ -234,7 +236,7 @@
             class="input modal__form-input"
             placeholder="Your Full Name*"
             name="name"
-            minlenght="2"
+            minlength="2"
             required
             autocomplete="off"
           />
@@ -247,7 +249,7 @@
             required
             autocomplete="off"
           />
-          <input type="email" class="input modal__form-input" placeholder="Email*" name="email" required  autocomplete="off"/>
+          <input type="email" class="input modal__form-input" placeholder="Email*" name="email" required autocomplete="off"/>
           <textarea class="modal__form-message" placeholder="Message" name="message" required></textarea>
           <div class="modal__form-submit">
             <button type="submit" class="modal__form-btn btn-hover">Send</button>
@@ -257,13 +259,13 @@
       </div>
     </div>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
-    <script src="./js/jquery.mask.min.js"></script>
-    <script src="./js/parallax.min.js"></script>
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/aos.js"></script>
-    <script src="./js/main.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script defer src="./js/jquery-3.6.0.min.js"></script>
+    <script defer src="./js/jquery.validate.min.js"></script>
+    <script defer src="./js/jquery.mask.min.js"></script>
+    <script defer src="./js/parallax.min.js"></script>
+    <script defer src="./js/swiper-bundle.min.js"></script>
+    <script defer src="./js/aos.js"></script>
+    <script defer src="./js/main.min.js"></script>
   </body>
 </html>

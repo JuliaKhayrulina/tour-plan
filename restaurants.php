@@ -17,7 +17,11 @@
       <div class="restaurants-item">
         <div class="restaurants-item__inner">
           <span class="offer restaurants-item__offer">Flash Offer</span>
-          <img src="./img/restaurant-2.jpg" alt="restaurant: Conrad Rangali" class="restaurants-item__img" />
+          <picture>
+            <source srcset="./img/restaurant-2.webp" class="restaurants-item__img" type="image/webp">
+            <img src="./img/restaurant-2.jpg" alt="restaurant: Conrad Rangali" class="restaurants-item__img">
+          </picture>
+          <!-- <img src="./img/restaurant-2.jpg" alt="restaurant: Conrad Rangali" class="restaurants-item__img" /> -->
         </div>
         <div class="restaurants-item__descr">
           <h3 class="restaurants-item__subtitle">Conrad Rangali</h3>
@@ -55,7 +59,11 @@
       <div class="restaurants-item">
         <div class="restaurants-item__inner">
           <span class="offer restaurants-item__offer">Flash Offer</span>
-          <img src="./img/restaurant-3.jpg" alt="restaurant: Ithaa Restaurant" class="restaurants-item__img" />
+          <picture>
+            <source srcset="./img/restaurant-3.webp" class="restaurants-item__img" type="image/webp">
+            <img src="./img/restaurant-3.jpg" alt="restaurant: Ithaa Restaurant" class="restaurants-item__img">
+          </picture>
+          <!-- <img src="./img/restaurant-3.jpg" alt="restaurant: Ithaa Restaurant" class="restaurants-item__img" /> -->
         </div>
         <div class="restaurants-item__descr">
           <h3 class="restaurants-item__subtitle">Ithaa Restaurant</h3>
@@ -93,7 +101,11 @@
       <div class="restaurants-item">
         <div class="restaurants-item__inner">
           <span class="offer restaurants-item__offer">Flash Offer</span>
-          <img src="./img/restaurant-4.jpg" alt="restaurant: Sea.Fire.Salt.Sky" class="restaurants-item__img" />
+          <picture>
+            <source srcset="./img/restaurant-4.webp" class="restaurants-item__img" type="image/webp">
+            <img src="./img/restaurant-4.jpg" alt="restaurant: Sea.Fire.Salt.Sky" class="restaurants-item__img">
+          </picture>
+          <!-- <img src="./img/restaurant-4.jpg" alt="restaurant: Sea.Fire.Salt.Sky" class="restaurants-item__img" /> -->
         </div>
         <div class="restaurants-item__descr">
           <h3 class="restaurants-item__subtitle">Sea.Fire.Salt.Sky</h3>
@@ -131,7 +143,11 @@
       <div class="restaurants-item">
         <div class="restaurants-item__inner">
           <span class="offer restaurants-item__offer">Flash Offer</span>
-          <img src="./img/restaurant-1.jpg" alt="restaurant: Baan Huraa" class="restaurants-item__img" />
+          <picture>
+            <source srcset="./img/restaurant-1.webp" class="restaurants-item__img" type="image/webp">
+            <img src="./img/restaurant-1.jpg" alt="restaurant: Baan Huraa" class="restaurants-item__img">
+          </picture>
+          <!-- <img src="./img/restaurant-1.jpg" alt="restaurant: Baan Huraa" class="restaurants-item__img" /> -->
         </div>
         <div class="restaurants-item__descr">
           <h3 class="restaurants-item__subtitle">Baan Huraa</h3>
@@ -170,7 +186,11 @@
       <div class="restaurants-item">
         <div class="restaurants-item__inner">
           <span class="offer restaurants-item__offer">Flash Offer</span>
-          <img src="./img/restaurant-5.jpg" alt="restaurant: Huvafen" class="restaurants-item__img" />
+          <picture>
+            <source srcset="./img/restaurant-5.webp" class="restaurants-item__img" type="image/webp">
+            <img src="./img/restaurant-5.jpg" alt="restaurant: Huvafen" class="restaurants-item__img">
+          </picture>
+          <!-- <img src="./img/restaurant-5.jpg" alt="restaurant: Huvafen" class="restaurants-item__img" /> -->
         </div>
         <div class="restaurants-item__descr">
           <h3 class="restaurants-item__subtitle">Huvafen</h3>
@@ -209,7 +229,11 @@
       <div class="restaurants-item">
         <div class="restaurants-item__inner">
           <span class="offer restaurants-item__offer">Flash Offer</span>
-          <img src="./img/restaurant-6.jpg" alt="restaurant: Restaurant Sea" class="restaurants-item__img" />
+          <picture>
+            <source srcset="./img/restaurant-6.webp" class="restaurants-item__img" type="image/webp">
+            <img src="./img/restaurant-6.jpg" alt="restaurant: Restaurant Sea" class="restaurants-item__img">
+          </picture>
+          <!-- <img src="./img/restaurant-6.jpg" alt="restaurant: Restaurant Sea" class="restaurants-item__img" /> -->
         </div>
         <div class="restaurants-item__descr">
           <h3 class="restaurants-item__subtitle">Restaurant Sea</h3>

@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap" as="style" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preload" href="./css/style.min.css" as="style" />
+    <link rel="preload" href="./css/swiper-bundle.min.css" as="style" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/aos.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
     <title>Best Tour Plan - Hotel Booking</title>
   </head>
   <body>
@@ -26,7 +30,7 @@
           <form action="#" class="search navbar__search navbar__search--mobile-hidden">
             <input type="text" class="search__input" placeholder="Search Location" />
             <button class="search__btn btn-hover">
-              <img src="./img/search.svg" alt="icon: search" />
+              <img src="./img/search.svg" alt="icon: search" width="16" height="16"/>
             </button>
           </form>
 
@@ -55,7 +59,7 @@
               <form action="#" class="search navbar__search navbar__search--mobile-visible">
                 <input type="text" class="search__input" placeholder="Search Location" />
                 <button class="search__btn">
-                  <img src="./img/search.svg" alt="icon: search" />
+                  <img src="./img/search.svg" alt="icon: search" width="16" height="16" />
                 </button>
               </form>
             </li>

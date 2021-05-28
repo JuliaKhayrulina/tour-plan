@@ -12,7 +12,7 @@
             </a>
           </div>
           <div class="footer__nav footer__categories">
-            <h3 class="footer__title">All categories</h3>
+            <h3 class="footer__title footer__title--mb-categories">All categories</h3>
             <ul class="footer__list">
               <li class="footer__item"><a href="#" class="footer__item-link">All Deals</a></li>
               <li class="footer__item"><a href="#" class="footer__item-link">Hotels</a></li>
@@ -72,7 +72,7 @@
                 <a href="#" class="footer__item-link">Cancellation policy </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__item-link">Cancellation policy Privacy</a>
+                <a href="#" class="footer__item-link">Privacy</a>
               </li>
             </ul>
           </div>
@@ -81,7 +81,7 @@
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
-            <ul class="footer__list">
+            <ul class="footer__list footer__list-info">
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
                   <img src="./img/map-marker.svg" alt="icon: placemark" class="footer__icon" width="14" height="20" loading="lazy"/>

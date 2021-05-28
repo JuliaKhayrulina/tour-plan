@@ -1246,6 +1246,7 @@ template {
   bottom: 113px;
   right: 60px;
   background: url(../img/quote-right.svg) no-repeat;
+  z-index: 0;
 }
 
 .reviews-slider__profile {
@@ -1286,6 +1287,7 @@ template {
 }
 
 .reviews-slider__text {
+  position: relative;
   padding: 0 35px 0 35px;
   max-width: 607px;
   max-height: 130px;
@@ -1293,6 +1295,7 @@ template {
   line-height: 18px;
   text-align: justify;
   overflow: auto;
+  z-index: 1;
 }
 
 .reviews__slider {
@@ -2236,18 +2239,22 @@ template {
     padding-top: 73px;
   }
   .footer-wrapper {
-    -ms-grid-columns: 27.5% 42.5% 28.8%;
-        grid-template-columns: 27.5% 42.5% 28.8%;
-    row-gap: 37px;
+    -ms-grid-columns: 26.5% 43.5% 28.8%;
+        grid-template-columns: 26.5% 43.5% 28.8%;
+    row-gap: 46px;
   }
   .footer__logo {
-    width: 104px;
+    width: 98px;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     grid-column: span 1;
   }
+  .footer__logo-img {
+    height: 109px;
+  }
   .footer__social-network {
+    padding-top: 5px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -2265,6 +2272,7 @@ template {
     grid-column: 1 / 2;
   }
   .footer__additional {
+    padding-left: 14px;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
@@ -2273,6 +2281,7 @@ template {
     grid-column: 2 / 3;
   }
   .footer__legal {
+    padding-left: 8px;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
@@ -2297,17 +2306,34 @@ template {
     grid-column: 1 / 4;
     width: 78%;
   }
+  .footer__title--mb-categories {
+    margin-bottom: 18px;
+  }
   .footer__title--mt-contact {
-    margin-top: 27px;
+    margin-top: 18px;
+    margin-bottom: 23px;
   }
   .footer__title--mb-message {
-    margin-bottom: 38px;
+    margin-bottom: 44px;
+    line-height: 9px;
   }
-  .footer__icon {
-    padding-left: 8px;
+  .footer__text {
+    margin-bottom: 26px;
+  }
+  .footer__text-info {
+    line-height: 10px;
+  }
+  .footer__text--mb-2 {
+    margin-bottom: 15px;
+  }
+  .footer__list-info {
+    padding-left: 6px;
+  }
+  .footer__item-info {
+    line-height: 10px;
   }
   .footer-bottom {
-    padding-top: 20px;
+    padding: 8px 0 6px 0;
   }
   .footer-bottom__inner {
     width: 100%;
@@ -2601,6 +2627,7 @@ template {
     grid-column: 1 / 2;
   }
   .footer__legal {
+    padding: 0;
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3 / 4;
@@ -2609,6 +2636,7 @@ template {
     grid-column: 1 / 2;
   }
   .footer__additional {
+    padding: 0;
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4 / 5;
@@ -2751,6 +2779,12 @@ template {
     width: 100%;
     max-width: 100%;
   }
+  .footer__item-info {
+    line-height: 21px;
+  }
+  .footer__item--mb-2 {
+    margin-bottom: 22px;
+  }
   .modal__dialog {
     padding: 23px 38px;
   }
@@ -2856,6 +2890,17 @@ template {
   .hotel__slider {
     margin-bottom: 20px;
   }
+  .hotel__slider-button {
+    width: 12px;
+    height: 12px;
+    background-size: 4px;
+  }
+  .hotel__slider-button--next {
+    right: 7px;
+  }
+  .hotel__slider-button--prev {
+    left: 7px;
+  }
   .hotel__swiper-container {
     height: 179px;
   }
@@ -2937,7 +2982,7 @@ template {
         grid-template-rows: repeat(auto-fit, minmax(200px, 250px));
   }
   .footer-wrapper {
-    row-gap: 30px;
+    row-gap: 31px;
   }
   .footer__social-network {
     -webkit-box-orient: vertical;
@@ -2955,21 +3000,17 @@ template {
     margin-top: 14px;
   }
   .footer__title--mb-message {
-    margin-bottom: 17px;
+    margin-bottom: 24px;
+    margin-top: 10px;
   }
   .footer__text {
     margin-bottom: 19px;
   }
   .footer__icon-wrapper {
-    min-width: 32px;
+    min-width: 25px;
   }
   .footer__contact-details {
-    margin-bottom: 10px;
     max-width: 100%;
-  }
-  .footer__icon {
-    padding-left: 5px;
-    padding-top: 7px;
   }
   .footer__form-group {
     margin-bottom: 13px;
